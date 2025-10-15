@@ -1,0 +1,160 @@
+{
+  "designSystem": {
+    "metadata": {
+      "name": "Knowledge App Design System",
+      "version": "1.0",
+      "platform": "Mobile iOS",
+      "designLanguage": "Modern gradient-based card interface"
+    },
+    
+    "layout": {
+      "structure": "Vertical scrolling card list",
+      "screenPadding": "20-24px horizontal",
+      "cardSpacing": "16-20px vertical gap between cards",
+      "safeArea": "Top status bar and bottom navigation respected"
+    },
+
+    "navigation": {
+      "type": "Bottom tab bar",
+      "style": "5 icon-based tabs",
+      "activeIndicator": "Highlighted center button with background",
+      "position": "Fixed bottom with rounded container"
+    },
+
+    "cards": {
+      "structure": {
+        "type": "Horizontal content cards with illustration",
+        "layout": "Text left, illustration right",
+        "aspectRatio": "Approximately 2:1 width to height",
+        "cornerRadius": "24-28px rounded corners"
+      },
+      
+      "contentArrangement": {
+        "textSection": {
+          "position": "Left 60% of card",
+          "padding": "24-32px",
+          "verticalAlignment": "Top to middle"
+        },
+        "illustrationSection": {
+          "position": "Right 40% of card",
+          "alignment": "Center-right or bottom-right",
+          "style": "3D character illustrations"
+        }
+      },
+
+      "actionButton": {
+        "type": "Circular chevron button",
+        "size": "48-56px diameter",
+        "position": "Bottom-left of card content area",
+        "style": "Semi-transparent dark overlay with right-facing chevron",
+        "icon": "Right arrow/chevron"
+      },
+
+      "gradients": {
+        "pattern": "Diagonal or radial multi-stop gradients",
+        "direction": "Typically top-left to bottom-right",
+        "stops": "2-3 color stops with smooth transitions",
+        "note": "Each card uses distinct gradient combination for visual hierarchy"
+      }
+    },
+
+    "typography": {
+      "cardTitle": {
+        "weight": "Bold (700-800)",
+        "size": "20-24px",
+        "color": "White",
+        "letterSpacing": "Normal to slight (-0.02em)"
+      },
+      "cardDescription": {
+        "weight": "Regular (400-500)",
+        "size": "13-15px",
+        "color": "White with 80-90% opacity",
+        "lineHeight": "1.4-1.5",
+        "maxLines": "2-3 lines"
+      },
+      "screenTitle": {
+        "weight": "Bold (700)",
+        "size": "28-32px",
+        "color": "White",
+        "position": "Top of screen below status bar"
+      }
+    },
+
+    "illustrations": {
+      "style": "3D rendered characters",
+      "characteristics": [
+        "Soft lighting and shadows",
+        "Minimalist character design",
+        "Props relevant to card content",
+        "Consistent art style across all cards",
+        "Characters sized to fit within card bounds"
+      ],
+      "integration": "Illustrations overflow slightly beyond card bounds for depth"
+    },
+
+    "visualHierarchy": {
+      "primary": "Card titles in bold white",
+      "secondary": "Descriptive text in lighter white",
+      "tertiary": "Action buttons with subtle contrast",
+      "emphasis": "Gradient backgrounds provide context and separation"
+    },
+
+    "interactionPatterns": {
+      "cardTap": "Entire card is tappable area",
+      "buttonTap": "Circular chevron button provides explicit CTA",
+      "feedback": "Likely scale or opacity change on press",
+      "navigation": "Cards lead to detailed content screens"
+    },
+
+    "colorSystem": {
+      "approach": "Gradient-based color palette per card",
+      "cardDifferentiation": "Each card uses unique gradient scheme",
+      "contrast": "White text on colored gradients ensures readability",
+      "consistency": "Similar saturation and vibrancy across cards"
+    },
+
+    "designPrinciples": [
+      "Visual separation through gradient backgrounds",
+      "Consistent card structure with varied colors",
+      "Illustrations add personality and context",
+      "Clear hierarchy: title → description → action",
+      "Generous whitespace within cards",
+      "Rounded corners throughout for soft, friendly feel",
+      "Dark background enhances card pop and focus"
+    ],
+
+    "implementationGuidelines": {
+      "cardComponent": {
+        "structure": "Container with gradient background, text column, illustration, action button",
+        "responsive": "Maintain aspect ratio, scale illustrations proportionally",
+        "accessibility": "Ensure sufficient contrast, clear tap targets 44x44pt minimum"
+      },
+      
+      "animationSuggestions": [
+        "Subtle scale on card press (0.98 scale)",
+        "Fade in cards on scroll with stagger",
+        "Smooth gradient transitions if colors change",
+        "Button ripple or scale feedback"
+      ],
+
+      "layoutGrid": {
+        "columns": "Single column on mobile",
+        "cardWidth": "Screen width minus padding",
+        "stackingOrder": "Vertical list, cards stack top to bottom"
+      }
+    },
+
+    "replicationChecklist": [
+      "Apply deep purple/dark background to screen",
+      "Create card container with generous border-radius",
+      "Apply distinct gradient to each card background",
+      "Position title and description in left content area",
+      "Add circular action button with chevron at bottom-left",
+      "Place 3D illustration on right side of card",
+      "Ensure white text with proper opacity hierarchy",
+      "Add consistent spacing between all cards",
+      "Include bottom navigation with icon tabs",
+      "Maintain consistent padding and alignment"
+    ]
+  }
+}
